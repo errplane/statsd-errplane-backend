@@ -14,8 +14,8 @@ Then add to the Statsd configuration array the backends key:
 You'll need an [errplane](https://errplane.com) account. Add an errplane configuration block to your statsd config:
 ```javascript
 /*
-  apiKey can be found on your [organization page](https://errplane.com/settings/organization)
-  applicationId can be found on the [applications page](https://errplane.com/settings/applications)
+  apiKey can be found at https://errplane.com/settings/organization
+  applicationId can be found at https://errplane.com/settings/applications
   environment usually either production, staging, or development
   includeHostSuffix when set to true will add /<host> to the metric names. Do this if you're 
     running statsd on each host and want to see stats on a per host basis in addition to all together
