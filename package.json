@@ -1,0 +1,24 @@
+{
+  "author": "Errplane (pilots@errplane.com)",
+  "name": "statsd-errplane-backend",
+  "description": "A StatsD backend for Errplane (https://errplane.com)",
+  "version": "0.0.1",
+  "homepage": "https://github.com/errplane/statsd-errplane-backend",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/errplane/statsd-errplane-backend.git"
+  },
+  "keywords": [
+    "errplane",
+    "metrics",
+    "statsd"
+  ],
+  "engines": {
+    "node": ">=0.4"
+  },
+  "dependencies": {
+    "errplane": ">=0.1.4"
+  },
+  "devDependencies": {},
+  "main": "lib/errplane.js"
+}
