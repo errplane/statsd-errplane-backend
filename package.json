@@ -2,7 +2,7 @@
   "author": "Errplane (pilots@errplane.com)",
   "name": "statsd-errplane-backend",
   "description": "A StatsD backend for Errplane (https://errplane.com)",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/errplane/statsd-errplane-backend",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "node": ">=0.4"
   },
   "dependencies": {
-    "errplane": ">=0.1.4"
+    "errplane": ">=0.2.0"
   },
   "devDependencies": {},
   "main": "lib/errplane.js"
