@@ -27,3 +27,27 @@ errplane: {
   includeHostSuffix: false
 }
 ```
+
+You can also configure it to send stats to different Errplane applications and environments. This is helpful 
+if you put the enviroment, hostname, or application in the name of the stat. For example:
+```javascript
+errplane: {
+  apiKey: "...",
+  applicationId: "...",
+  environment: "production",
+  statParser: {
+    regex: /(.*)\.(.*)\.(.*)\.(.*)/,
+    environmentMatch: 1,
+    applicationMatch: 2,
+    statNameMatch: 3,
+    hostMatch: 4
+  },
+  applicationNameToId: {
+    "aviator": "the errplane app key for aviator",
+    "rails": "the errplane app key for the rails app"
+  }
+}
+```
+So if you sent a stat to statsd with the name ```production.aviator.logins.app1``` it would get parsed out as a stat named ```logins/app1``` that would get sent to the production environment for aviator.
+
+If the regex doesn't match against the stat name, the applicationId and environment configuration options will be used as the default.
